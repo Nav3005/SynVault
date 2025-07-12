@@ -58,7 +58,7 @@ with tab1:
             
             # Sample size slider
             st.write("### Generate Synthetic Data")
-            sample_size = st.slider("Number of synthetic data points to generate:", 
+            sample_size = st.number_input("Number of synthetic data points to generate:", 
                                   min_value=1, 
                                   max_value=max(10000, df.shape[0]*10), 
                                   value=df.shape[0],
